@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+:root {
+  --b-p: #0093FF;
+}
+
+.b-p {
+  background: var(--b-p);
+}
+
+.screen_wrapper {
+  background: #000;
+  overflow: hidden;
+}
+.screen_wrapper .bg-img-part {
+  width: 550px;
+  height: 100vh;
+  opacity: 0.23;
+  background: #000;
+  float: left;
+}
+.screen_wrapper .bg-img-part img {
+  background: #000;
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.screen_wrapper .login_wrapper {
+  width: calc(100% - 550px);
+  height: 100vh;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.screen_wrapper .login_wrapper .form_action {
+  max-width: 400px;
+  border: solid;
+}/*# sourceMappingURL=main.css.map */
