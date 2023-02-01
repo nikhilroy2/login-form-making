@@ -27,6 +27,11 @@ body {
   background: #000;
   float: left;
 }
+@media (max-width: 1000px) {
+  .screen_wrapper .bg-img-part {
+    display: none;
+  }
+}
 .screen_wrapper .bg-img-part img {
   background: #000;
   width: inherit;
@@ -43,7 +48,84 @@ body {
   align-items: center;
   color: white;
 }
+@media (max-width: 1000px) {
+  .screen_wrapper .login_wrapper {
+    width: 100%;
+  }
+}
 .screen_wrapper .login_wrapper .form_action {
   max-width: 400px;
-  border: solid;
+  padding: 25px;
+}
+.screen_wrapper .login_wrapper .form_action h2,
+.screen_wrapper .login_wrapper .form_action p {
+  margin: 0px;
+  margin-bottom: 12px;
+}
+.screen_wrapper .login_wrapper .form_action .link_wrapper a {
+  font-size: 17px;
+  color: #fff;
+  margin-bottom: 12px;
+  display: inline-block;
+  margin-right: 12px;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.screen_wrapper .login_wrapper .form_action .link_wrapper a.active {
+  border-color: #fff;
+}
+.screen_wrapper .login_wrapper .form_action .form_group .form_control {
+  width: 100%;
+  padding: 10px 18px;
+  border: 0;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.screen_wrapper .login_wrapper .form_action .form_group .submit_control {
+  margin-top: 10px;
+}
+.screen_wrapper .login_wrapper .form_action .form_group .submit_control .btn_submit {
+  background: #fff;
+  padding: 8px 18px;
+  font-size: 15px;
+  border: none !important;
+  border-radius: 6px;
+  color: var(--b-p);
+  display: inline-block;
+  margin-right: 8px;
+  outline: none !important;
+  box-shadow: none !important;
+  cursor: pointer;
+}
+.screen_wrapper .login_wrapper .form_action .form_group .submit_control a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+.screen_wrapper .login_wrapper .form_action .form_group .submit_control a:hover {
+  text-decoration: underline;
+}
+.screen_wrapper .login_wrapper .form_action .form_group .social_login {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  margin-top: 45px;
+}
+.screen_wrapper .login_wrapper .form_action .form_group .social_login li {
+  margin-right: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+}
+.screen_wrapper .login_wrapper .form_action .form_group .social_login li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+.screen_wrapper .login_wrapper .form_action .form_group .social_login li a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */
