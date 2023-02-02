@@ -12,11 +12,15 @@ body {
 // classes
 :root {
     --b-p: #0093FF;
+    --b-d: 35, 57, 74;
 }
 
 // background color classes
 .b-p {
     background: var(--b-p);
+}
+.b-d{
+    background: rgb(var(--b-d));
 }
 
 // login page code below
@@ -36,6 +40,10 @@ body {
         opacity: .23;
         background: #000;
         float: left;
+        &.bg_visible{
+            opacity: 1;
+            background: transparent;
+        }
 
         img {
             background: #000;
@@ -148,5 +156,20 @@ body {
                 }
             }
         }
+    }
+}
+
+
+// input field class
+.b-d-hover-effect{
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    transition: .3s;
+    &::placeholder{
+        color: inherit;
+    }
+    &:hover{
+        background: rgba(255, 255, 255, 1);
+        color: #000;
     }
 }

@@ -10,10 +10,15 @@ body {
 
 :root {
   --b-p: #0093FF;
+  --b-d: 35, 57, 74;
 }
 
 .b-p {
   background: var(--b-p);
+}
+
+.b-d {
+  background: rgb(var(--b-d));
 }
 
 .screen_wrapper {
@@ -31,6 +36,10 @@ body {
   .screen_wrapper .bg-img-part {
     display: none;
   }
+}
+.screen_wrapper .bg-img-part.bg_visible {
+  opacity: 1;
+  background: transparent;
 }
 .screen_wrapper .bg-img-part img {
   background: #000;
@@ -128,4 +137,23 @@ body {
 }
 .screen_wrapper .login_wrapper .form_action .form_group .social_login li a:hover {
   text-decoration: underline;
+}
+
+.b-d-hover-effect {
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  transition: 0.3s;
+}
+.b-d-hover-effect::-moz-placeholder {
+  color: inherit;
+}
+.b-d-hover-effect:-ms-input-placeholder {
+  color: inherit;
+}
+.b-d-hover-effect::placeholder {
+  color: inherit;
+}
+.b-d-hover-effect:hover {
+  background: rgb(255, 255, 255);
+  color: #000;
 }/*# sourceMappingURL=main.css.map */
